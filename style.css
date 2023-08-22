@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    height: 100vh;
+    cursor: default;
+    width: 100vw;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    color: white;
+    background-attachment: fixed;
+}
+.fade-in{
+
+}
+.container_1{
+    width: 50%;
+    /* border: 1px solid rgb(255, 255, 255, .5); */
+    height: 50%;
+    margin: auto;
+    position: relative;
+    background-color:transparent;
+    border-radius: 12px;
+    z-index: 6;
+    padding: 15px 0;
+    top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 13px 18px;
+    animation-name: scale-up-center;
+    height: 67%;
+    -webkit-backdrop-filter: blur(14px);
+   backdrop-filter: blur(14px);
+    transition: .5s ease-in-out;
+    
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* To center first two para: */
+.paraTPdate{
+    text-align: center;
+}
+/* ///// */
+/* To center first 6 input Box  */
+.inputBoxMain{
+    display: flex;
+    justify-content: center;
+}
+::placeholder {
+    text-align: center; 
+    color: aqua;
+
+ }
+ .scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ 
+ /* or, for legacy browsers */
+ 
+ ::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(91, 99, 99);
+ }
+ input{
+    text-align:center;
+ }
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+    color: aqua;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+    color: aqua;
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+    color: aqua;
+ }
+.inputBox1{
+    width: 100px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+    border-radius: 7px;
+    outline: none;
+    background: transparent;
+    color: rgb(204, 198, 198);
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 5vh;
+   font-size: 3vh;
+}
+#hamburger{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1vw;
+  top: 6vw;
+  z-index: 99;
+}
+#hamburger span{
+  width: 31px;
+  height: 2px;
+  background-color: white;
+  margin: 8px 23px 0 0;
+  transition: .4s ease;
+}
+
+/* Calculation Function */
+.calcFunc{
+    position: relative;
+    top: 7%;
+}
+.calcFuncChild{
+    display: flex;
+    justify-content:space-around ;
+}
+.aftercalc{
+  color: rgb(134, 185, 185);
+  font-size: 19px;
+}
+.calcFuncBox{
+    width: 180px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+    background: transparent;
+    border: 0.5px solid white;
+    border-radius: 12px;
+    outline: none;
+    color: rgb(204, 198, 198);
+}
+
+/* Calculate Button  */
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 14%;
+  z-index: 0;
+
+}
+.submitBtn button{
+animation-name: buttonLtoR;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+width: 100px;
+height: 30px;
+outline: none;
+border: none;
+}
+
+
+
+.calcButton{
+            background-color: transparent;
+            border: 1px solid rgb(148, 144, 144);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            padding: 3px 12px;
+          color: white;
+}
+
+@keyframes buttonLtoR {
+  0%{
+    background-color:#6e7a6c;
+  }
+  100%{
+    background-color:#041801;
+  }
+}
+.submitBtn2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+  z-index: 0;
+  align-items: center;
+  transition: 2s ease-in;
+}
+
+/* Right SIDE BUTTON CSS  */
+.cvBtn{
+    background-color: transparent;
+    border: 1px solid rgb(148, 144, 144);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    padding: 3px 12px;
+    color: white;
+  }
+  .cvBtn:hover{
+    background-color: #933ded;
+  }
+  .bottom32{
+    top:-161px;
+  }
+  .cvBtn:hover + .teamBtn{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(148, 144, 144);
+  }
+  .teamBtn{
+    background-color: #933ded;
+    color: white;
+    padding: 3px 12px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .teamBtn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(148, 144, 144);
+    /* color: rgb(15, 14, 14); */
+  }
+  .vibrate-1:hover{
+    background-color: #42293c;
+  }
+  .sideNameTextRight{
+    position: absolute;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 7px;
+    width: 20%;
+    right: 4%;
+    top: 40%;
+  }
+
+  /* LEft SIDE Links  */
+  .sideNameTextLeft{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    width: 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageIcon a img{
+    width: 27px;
+    animation: vibrate-1 0.3s linear infinite both;
+  }
+  .buttonLove{
+display: flex;
+position: absolute;
+width: 100vw;
+justify-content: center;
+align-self: flex-end;
+    bottom: 3%;
+/* border: 1px solid green; */
+flex-direction: row;
+overflow: hidden;
+  }
+  .buttonLove h2{
+    /* align-self: flex-end;  */
+    font-size: 40px;
+    font-family: gigi;
+  }
+.aftercalc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+  .logo a img{
+width: 40px;
+z-index: 9;
+position: fixed;
+top: 2vw;
+left: 2vw;
+  }
+.opNone #hamburger{
+  opacity: 0;
+  pointer-events: none;
+}
+  .mainHeading{
+    position: relative;
+    /* bottom: 0; */
+    top: -31px;
+    /* border: 1px solid green; */
+    text-align: center;
+
+    /* top: 12%; */
+
+  }
+  .mainHeading{
+    position: relative;
+    top: 9vh;
+}
+  .mainHeading h2{
+font-size: 30px;
+font-family: handjet;
+z-index: 0;
+}
+
+  .imageIcon img:hover{
+opacity: 70%;
+  }
+  .sideNameTextLeft h2{
+    cursor: default;
+  }
+  .heart{
+font-size: 85px;
+display: block;
+text-align: center;
+color: red;
+  }
+/* ANIMATIONS OF CONTAINERS  */
+/* Main 1st DIV */
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 1.7s cubic-bezier(0.250, 0.460, 0.450, 1.940) both;
+	        animation: slide-in-bck-center 1.7s cubic-bezier(0.250, 0.460, .450, 0.940) both;
+}
+.roll-in-right {
+	-webkit-animation: roll-in-right 0.6s ease-out both;
+	        animation: roll-in-right 0.6s ease-out both;
+}
+.roll-in-left{
+	-webkit-animation: roll-in-left 0.6s ease-out both;
+	        animation: roll-in-left 0.6s ease-out both;
+}
+.fade-in {
+	-webkit-animation: fade-in 3.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 3.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation-delay: 4s;
+}
+.vibrate-1 {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+/* KEY FRAMES  */
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-3 22:23:28
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+
+ * ----------------------------------------
+ * animation slide-in-bck-center
+ * ----------------------------------------
+ */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-6 14:15:50
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+ @-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+              transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  /* ----------------------------------------------
+ * Generated by Animista on 2023-8-3 22:29:12
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation roll-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2023-8-3 23:12:9
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes conHeight {
+    0% {
+height: 70%;
+background-color: red;
+    }
+
+    100% {
+height: 80%;
+    }}
+.opZero{
+  opacity:0;
+  pointer-events: none;
+}
+.opOne{
+  opacity: 1;
+  pointer-events: all;
+}
+.backdropFilter{
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: 1s ease-in-out;
+}
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+          background-color: rgb(118, 116, 119);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+
+  }
+}

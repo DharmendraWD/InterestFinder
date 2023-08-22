@@ -1,0 +1,67 @@
+@media(max-width:1100px){
+    .sideNameTextLeft{
+    width: 20%;
+}
+.sideNameTextRight {
+    grid-template-columns: 2fr;
+
+}
+}
+@media(max-width:730px){
+.inputBoxMain{
+    flex-direction: column;
+    align-items: center;
+}
+.container_1 {
+    width: 90%;
+    height: 70%;
+}
+.inputBox1 {
+    width: 60%;
+    margin: 5px 0;
+}
+.hmBurger #span1{
+    background-color: yellow !important;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  .hmBurger #span2{
+    background-color: rgb(27, 252, 7) !important;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+  .hmBurger #span3{
+    opacity: 0;
+  }
+  .logo a img{
+    top: 6vw;
+    left: 2vw;
+      }
+      .opNone #hamburger{
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .sideNameTextLeft{
+        width: 100vw;
+        display: flex;
+    justify-content: center;
+    top: 32%;
+    left: 0;
+      }
+      .sideNameTextRight{
+        display: flex;
+justify-content: center;
+position: relative;
+top: 23%;
+left: 0;
+right: 0;
+        width: 100vw;
+      }
+      .calcFuncBox {
+      height: 4vh;
+      font-size: 3vh;
+  
+    }
+
+}

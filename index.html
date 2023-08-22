@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compound Interest Finder </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body class="mobile opNone">
+    
+
+    
+<div class="logo">
+    <!-- <h2>My First Program Ever</h2> -->
+<a href="#"> <img src="icons/calculator.png" alt=""></a>
+</div>
+
+<div id="hamburger">
+<span id="span1"></span>
+<span id="span2"></span>
+<span id="span3"></span>
+</div>
+
+<span class="x-icon"></span>
+
+
+
+    <div class="sideNameTextLeft roll-in-right">
+        <h2>Join Us On</h2>
+        <div class="imageIcon">
+            <a href="https://github.com/DharmendraWD" target="_blank" title="Github"><img src="icons/github.png" alt="Github"></a>
+            <a href="#" title="Quora"><img src="icons/quora.png" alt=""></a>
+            <a href="#" title="LinkedIn"><img src="icons/linkedin.png" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="sideNameTextRight roll-in-left">
+        <button class="cvBtn oneZindex">Who We Are?</button>
+            <!-- <button class="teamBtn oneZindex">Our Team</button>
+            <button class="teamBtn oneZindex">Contributors</button> -->
+    </div>
+
+
+
+    <div class="mainHeading">
+        <h2>Compound Interest Finder</h2>
+    </div>
+<div class="container_1 slide-in-bck-center ">
+<div class="toCalDate">
+    <p class="paraTPdate">Date of Taken Loan:</p>
+    <DIV class="inputBoxMain">
+    <input type="text" id="takenYear" class="inputBox1" placeholder="2078" value="2078">
+    <input type="text" id="takenMonth" class="inputBox1" placeholder="4" value="2">
+    <input type="text" id="takenDay" class="inputBox1" placeholder="13" value="2">
+</DIV>
+</div>
+
+
+
+
+<div class="toCalDate">
+    <p class="paraTPdate">Date of Today:</p>
+    <DIV class="inputBoxMain">
+    <input type="text" id="todayYear" class="inputBox1" placeholder="2080" value="2080">
+    <input type="text" id="todayMonth" class="inputBox1" placeholder="4" value="2">
+    <input type="text" id="todayDay" class="inputBox1" placeholder="13" value="2">
+</DIV>
+</div>
+
+<div class="calcFunc">
+<div class="calcFuncChild">
+    <p class="paracalcFunc">Total Principle:</p>
+    <input type="text" id="totalPrinciple" class="calcFuncBox" placeholder="eg..40000" value="100000">
+</div>
+<div class="calcFuncChild">
+    <p class="paracalcFunc">Interest Rate:</p>
+    <input type="text" id="tInterest" class="calcFuncBox" placeholder="eg..3" value="3">
+</div>
+<!-- <div class="calcFuncChild">
+    <p class="paracalcFunc">Date of taken Loan:</p>
+    <input type="text" id="tYear" class="calcFuncBox" placeholder="Year">
+</div> -->
+<!-- <div class="calcFuncChild">
+    <p class="paracalcFunc">Date of taken Loan:</p>
+    <input type="text" id="tYear" class="calcFuncBox" placeholder="Year">
+</div> -->
+<!-- <div class="calcFuncChild">
+    <p class="paracalcFunc">Date of taken Loan:</p>
+    <input type="text" id="tYear" class="calcFuncBox" placeholder="Year">
+</div> -->
+</div>
+
+<div class="aftercalc">
+    <p id="totalTime">Interest on interest earned</p>
+    <p id="onlyInterest"></p>
+    <p id="balWithInterest"></p>
+</div>
+
+<div class="submitBtn">
+   <button type="button" class="calcButton" id="submitBtn">Calculate</button>
+</div>
+</div>
+
+<div class="submitBtn2">
+    <h2 class="fade-in">Made with</h2>
+    <span class="heart fade-in">  &#x2665</span>
+
+</div>
+
+
+</body>
+</html>
